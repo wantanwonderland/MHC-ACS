@@ -1,0 +1,214 @@
+{
+    "canginapast2wk": {
+        "advice_en": [
+            "Practice stress reduction techniques like deep breathing",
+            "Keep a symptom diary to track frequency and triggers",
+            "Ensure regular follow-ups with cardiologist",
+            "Consider cardiac rehabilitation program"
+        ],
+        "advice_bm": [
+            "Amalkan teknik pengurangan tekanan seperti pernafasan dalam",
+            "Simpan diari simptom untuk mengesan kekerapan dan pencetus",
+            "Pastikan susulan tetap dengan pakar kardiologi",
+            "Pertimbangkan program pemulihan jantung"
+        ]
+    },
+    "ecgabnormlocationll": {
+        "advice_en": [
+            "Attend all scheduled ECG follow-ups",
+            "Report any new or worsening symptoms immediately",
+            "Consider wearing a medical alert bracelet",
+            "Follow medication regimen strictly"
+        ],
+        "advice_bm": [
+            "Hadiri semua susulan ECG yang dijadualkan",
+            "Laporkan sebarang gejala baharu atau semakin teruk dengan segera",
+            "Pertimbangkan untuk memakai gelang amaran perubatan",
+            "Ikut regimen ubat dengan ketat"
+        ]
+    },
+    "cardiaccath": {
+        "advice_en": [
+            "Follow post-procedure care instructions",
+            "Maintain regular cardiology check-ups",
+            "Discuss any concerns with healthcare provider"
+        ],
+        "advice_bm": [
+            "Ikut arahan penjagaan selepas prosedur",
+            "Kekalkan pemeriksaan kardiologi secara berkala",
+            "Bincangkan sebarang kebimbangan dengan penyedia penjagaan kesihatan"
+        ]
+    },
+    "cabg": {
+        "advice_en": [
+            "Participate in cardiac rehabilitation",
+            "Follow wound care instructions meticulously",
+            "Gradually increase physical activity as advised",
+            "Maintain good sleep hygiene",
+            "Join support groups for CABG patients"
+        ],
+        "advice_bm": [
+            "Mengambil bahagian dalam pemulihan jantung",
+            "Ikut arahan penjagaan luka dengan teliti",
+            "Tingkatkan aktiviti fizikal secara beransur-ansur seperti yang dinasihatkan",
+            "Kekalkan kebersihan tidur yang baik",
+            "Sertai kumpulan sokongan untuk pesakit CABG"
+        ]
+    },
+    "oralhypogly": {
+        "advice_en": [
+            "Take medication as prescribed",
+            "Monitor blood glucose regularly",
+            "Keep a log of readings",
+            "Be aware of hypoglycemia symptoms",
+            "Carry fast-acting glucose"
+        ],
+        "advice_bm":[
+            "Makan ubat seperti yang ditetapkan",
+            "Pantau glukosa darah dengan kerap",
+            "Simpan log bacaan",
+            "Berhati-hati dengan gejala hipoglikemia",
+            "Membawa glukosa bertindak pantas"
+        ]
+    },
+    "antiarr": {
+        "advice_en": [
+            "Never skip or double doses",
+            "Be aware of potential side effects",
+            "Avoid medications that may interact",
+            "Regular heart rhythm monitoring",
+            "Keep an updated medication list"
+        ],
+        "advice_bm": [
+            "Jangan sekali-kali melangkau atau menggandakan dos",
+            "Berhati-hati dengan kemungkinan kesan sampingan",
+            "Elakkan ubat yang boleh berinteraksi",
+            "Pemantauan irama jantung tetap",
+            "Simpan senarai ubat yang dikemas kini"
+        ]
+    },
+    "statin": {
+        "advice_en": [
+            "Take at the same time daily",
+            "Report muscle pain or weakness",
+            "Regular liver function monitoring",
+            "Be aware of potential food interactions"
+        ],
+        "advice_bm": [
+            "Ambil pada masa yang sama setiap hari",
+            "Laporkan sakit atau kelemahan otot",
+            "Pemantauan fungsi hati yang kerap",
+            "Berhati-hati dengan potensi interaksi makanan"
+        ]
+    },
+    "lipidla": {
+        "advice_en": [
+            "Consistent medication adherence",
+            "Combine with healthy diet",
+            "Report unusual side effects",
+            "Understand target lipid levels"
+        ],
+        "advice_bm": [
+            "Pematuhan ubat yang konsisten",
+            "Gabungkan dengan diet sihat",
+            "Laporkan kesan sampingan yang luar biasa",
+            "Fahami tahap lipid sasaran"
+        ]
+    },
+    "ptageatnotification": {
+        "advice_en": [
+            "Focus on modifiable risk factors",
+            "Regular health screenings",
+            "Stay socially active",
+            "Maintain cognitive function",
+            "Consider age-appropriate exercise"
+        ],
+        "advice_bm": [
+            "Fokus pada faktor risiko yang boleh diubah suai",
+            "Pemeriksaan kesihatan secara berkala",
+            "Kekal aktif secara sosial",
+            "Kekalkan fungsi kognitif",
+            "Pertimbangkan senaman yang sesuai dengan umur"
+        ]
+    },
+    "heartrate": {
+        "advice_en": [
+            "Regular monitoring at home",
+            "Practice relaxation techniques",
+            "Maintain good sleep habits",
+            "Stay hydrated",
+            "Avoid excessive caffeine"
+        ],
+        "advice_bm": [
+            "Pemantauan berkala di rumah",
+            "Amalkan teknik relaksasi",
+            "Kekalkan tabiat tidur yang baik",
+            "Kekal terhidrat",
+            "Elakkan kafein berlebihan"
+        ]
+    },
+    "ldlc": {
+        "advice_en": [
+            "Follow a heart-healthy diet",
+            "Increase fiber intake",
+            "Regular exercise",
+            "Consider plant sterols",
+            "Limit saturated and trans fats"
+        ],
+        "advice_bm": [
+            "Ikut diet yang menyihatkan jantung",
+            "Tingkatkan pengambilan serat",
+            "Senaman yang kerap",
+            "Pertimbangkan sterol tumbuhan",
+            "Hadkan lemak tepu dan trans"
+        ]
+    },
+    "hdlc": {
+        "advice_en": [
+            "Regular aerobic exercise",
+            "Maintain healthy weight",
+            "Consider moderate alcohol consumption (if appropriate)",
+            "Quit smoking",
+            "Increase omega-3 fatty acids"
+        ],
+        "advice_bm": [
+            "Senaman aerobik yang kerap",
+            "Kekalkan berat badan yang sihat",
+            "Pertimbangkan pengambilan alkohol sederhana (jika sesuai)",
+            "Berhenti merokok",
+            "Tingkatkan asid lemak omega-3"
+        ]
+    },
+    "fbg": {
+        "advice_en": [
+            "Consistent meal timing",
+            "Portion control",
+            "Regular exercise",
+            "Stress management",
+            "Adequate sleep"
+        ],
+        "advice_bm": [
+            "Masa makan yang konsisten",
+            "Kawalan bahagian",
+            "Senaman yang kerap",
+            "Pengurusan tekanan",
+            "Tidur yang mencukupi"
+        ]
+    },
+    "killipclass": {
+        "advice_en": [
+            "Strict adherence to treatment plan",
+            "Regular monitoring of symptoms",
+            "Fluid and sodium restrictions as advised",
+            "Daily weighing",
+            "Report worsening symptoms immediately"
+        ],
+        "advice_bm": [
+            "Pematuhan ketat kepada pelan rawatan",
+            "Pemantauan simptom secara berkala",
+            "Sekatan cecair dan natrium seperti yang dinasihatkan",
+            "Timbangan harian",
+            "Laporkan gejala yang semakin teruk dengan segera"
+        ]
+    }
+}

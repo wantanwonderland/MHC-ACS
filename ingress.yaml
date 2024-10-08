@@ -1,0 +1,24 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: mhc-acs-ingress
+  namespace: backend
+  annotations:
+    cert-manager.io/cluster-issuer: gengpt-clusterissuer
+spec:
+  tls:
+  - hosts:
+    - acs.api.myheart.support
+    secretName: unstructured-loader-langchain-service-tls
+  rules:
+  - host: acs.api.myheart.support
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: mhc-acs
+            port:
+              number: 8000
+  ingressClassName: nginx

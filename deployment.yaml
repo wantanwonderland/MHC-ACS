@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mhc-acs
+  namespace: backend
+spec:
+  selector:
+    matchLabels:
+      app: mhc-acs
+  replicas: 1
+  strategy:
+    rollingUpdate:
+      maxSurge: 1 # Maximum pods exceeding desired replicas during update
+      maxUnavailable: 1 # Maximum unavailable pods during update (absolute number or percentage)
+  template:
+    metadata:
+      labels:
+        app: mhc-acs
+    spec:
+      imagePullSecrets:
+        - name: dockerhub-image-pull-secret
+      containers:
+      - name: mhc-acs
+        image: shafuan/mhc-acs-ai:prod-2024.10.08-rev1
+        ports:
+        - containerPort: 8000
+        imagePullPolicy: IfNotPresent

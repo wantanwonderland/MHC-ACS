@@ -21,7 +21,7 @@ spec:
         - name: dockerhub-image-pull-secret
       containers:
       - name: mhc-acs
-        image: shafuan/mhc-acs-ai:prod-2024.10.08-rev1
+        image: shafuan/mhc-acs-ai:prod-2024.11.06-rev1
         ports:
         - containerPort: 8000
         imagePullPolicy: IfNotPresent

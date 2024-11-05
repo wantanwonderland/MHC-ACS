@@ -1,7 +1,3 @@
-Here’s your README file formatted in Markdown:
-
----
-
 # MyHeartCoach: ACS Prediction API
 
 **Version:** 1.0.0  
@@ -51,15 +47,26 @@ MHC-ACS/
   }
   ```
 
-### 2. Predict Risk
-- **URL:** `/predict`
+### 2. FRS Risk Prediction
+- **URL:** `/frs`
 - **Method:** `POST`
-- **Description:** Predicts ACS death risk, Framingham Risk Score (FRS), and provides an explanation using LIME.
-- **Request Body:** JSON object with features for risk prediction.
+- **Description:** Predicts the Framingham Risk Score based on input features.
+- **Request Body:** JSON object with features for FRS prediction.
 - **Response:**
   ```json
   {
-    "frs_prediction": FRS_risk_score,
+    "frs_prediction": FRS_risk_score
+  }
+  ```
+
+### 3. ACS Risk Prediction
+- **URL:** `/acs`
+- **Method:** `POST`
+- **Description:** Predicts ACS death risk and provides an explanation using LIME.
+- **Request Body:** JSON object with features for ACS risk prediction.
+- **Response:**
+  ```json
+  {
     "model_prediction": risk_prediction,
     "contribution_to_death": feature_contributions
   }
@@ -68,16 +75,16 @@ MHC-ACS/
 ## Features
 - Predict ACS risk using an XGBoost model.
 - Explain predictions using LIME (Local Interpretable Model-agnostic Explanations).
-- Calculate Framingham Risk Scores.
+- Calculate Framingham Risk Scores for patients.
 - FastAPI server for efficient and scalable performance.
 
 ## Technologies Used
-- **FastAPI:** Backend framework.
+- **FastAPI:** Backend framework for building APIs.
 - **XGBoost:** Machine learning model for risk prediction.
-- **LIME:** Explanation of model predictions.
+- **LIME:** Tool for explaining model predictions.
 - **Docker:** Containerization for easier deployment.
-- **Joblib:** Model loading and saving.
-- **Pandas/Numpy:** Data manipulation and analysis.
+- **Joblib:** For loading and saving models.
+- **Pandas/Numpy:** For data manipulation and analysis.
 
 ## Installation
 
@@ -142,4 +149,4 @@ This project is licensed under the MIT License.
 
 ---
 
-Be sure to replace `"yourusername"` and `"your_dockerhub_username"` with the correct values in the instructions.
+Make sure to replace `"yourusername"` and `"your_dockerhub_username"` with the appropriate values in the instructions. This README provides a comprehensive guide for users to understand, install, and run the MyHeartCoach API.

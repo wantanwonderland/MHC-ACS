@@ -65,8 +65,48 @@ def root():
 
 
 
-# Prediction Endpoint
-@app.post('/predict',summary="Predict FRS Risk, Risk Probability and Explanation")
+# FRS Endpoint
+@app.post('/frs',summary="Get FRS Risk")
+def predict(data:dict):
+    """
+    Predicts the FRS for a given input.
+
+    **body**: A JSON object containing the following features:\n
+        Framingham Risk Scores
+        •⁠ age:                 Patient's Age (30 - 100)
+        •⁠ hdlc:                HDL Cholesterol, (0.1 - 2.5 (mmol/l))
+        •⁠ sex:                 Patient's Sex (0 (men), 1 (women))
+        •⁠ tc:                  Total Cholesterol (0.1 - 8 (mmol/L))
+        •⁠ bpsys:               Systolic Blood Pressure (0.1-8(mmol/L))
+        •⁠ bpsys_treatment:     Treament for Hypertension (0 (not treated), 1 (treated))
+        •⁠ smoker:              Current Smoker (0 (no), 1 (yes))
+        •⁠ diabetes:            Diabetes (0 (no), 1 (yes))
+
+     Request JSON Examples:
+    {
+        "age": 57,
+        "hdlc": 1.0,
+        "sex": 0,
+        "tc": 2.5,
+        "bpsys": 120.00,
+        "bpsys_treatment": 1,
+        "smoker": 0,
+        "diabetes": 0
+    }
+
+    Returns:
+    - FRS risk score
+    """
+        
+
+    frs_prediction = getFRSRisk(data)
+    result = frs_prediction
+
+    return result
+
+
+# ACS Endpoint
+@app.post('/acs',summary="Predict Risk Probability and Explanation")
 def predict(data:dict):
     """
     Predicts the class and probability for a given input.
@@ -87,13 +127,6 @@ def predict(data:dict):
         •⁠ statin:              Statin (0 (no), 1 (yes)),
         •⁠ lipidla:             Lipid Lowering Agent (0 (no), 1 (yes))
 
-        Extra for Framingham Risk Scores
-        •⁠ sex:                 Patient's Sex (0 (men), 1 (women))
-        •⁠ tc:                  Total Cholesterol (0.1 - 8 (mmol/L))
-        •⁠ bpsys_treatment:     Treament for Hypertension (0 (not treated), 1 (treated))
-        •⁠ smoker:              Current Smoker (0 (no), 1 (yes))
-        •⁠ diabetes:            Diabetes (0 (no), 1 (yes))
-
      Request JSON Examples:
     {
         "ptageatnotification": 57,
@@ -109,17 +142,10 @@ def predict(data:dict):
         "ecgabnormlocationll": 1,
         "cardiaccath": 0,
         "statin": 1,
-        "lipidla":1,
-        "sex": 0,
-        "bpsys": 120.00,
-        "bpsys_treatment": 1,
-        "smoker": 0,
-        "diabetes": 0,
-        "tc": 2.5
+        "lipidla":1
     }
 
     Returns:
-    - `frs_prediction`: FRS risk score.
     - `model_prediction`: ACS Risk prediciton.
     - `contribution_to_death`: Features and their contributions to death with advice.
     """
@@ -142,11 +168,9 @@ def predict(data:dict):
     }
         
 
-    frs_prediction = getFRSRisk(data)
     model_prediction = predict_risk(data, model, class_names)
     contribution_to_death = explain(lime_data, explainer, lime_model)
     result = {
-        'frs_prediction': frs_prediction,
         'model_prediction': model_prediction,
         'contribution_to_death': contribution_to_death,
     }
